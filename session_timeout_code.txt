@@ -1,0 +1,7 @@
+
+
+
+
+
+var obj = JSON.parse(localStorage['firebase:session::stevetest1']);
+Date.now() > obj.expires

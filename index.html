@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="drawWorksApp">
+<head>
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body ng-controller="mainController">
+ <div class="wrapper">
+     <div class="topnav">
+     
+     </div>
+     <header>
+          <div class="heading"><a href="/landing"> Home </a></div>
+          <div class="heading"><a href="/#/login"> Log in</a></div>
+          <div class="heading"><a href="/#/aboutMe"> About Me</a></div>
+          <div class="heading"><a href="/#/gprojects"> Projects </a></div>
+     <header>  
+<!-- Add your site or application content here -->
+    <div class="container" ng-view></div>
+</div>
+<!-- Angular -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.13/angular.min.js"></script>
+<script src="https://code.angularjs.org/1.3.13/angular-route.min.js"></script>
+<!-- Firebase -->
+<script src="https://cdn.firebase.com/js/client/2.1.2/firebase.js"></script>
+
+<!-- AngularFire -->
+<script src="https://cdn.firebase.com/libs/angularfire/1.0.0/angularfire.min.js"></script>
+
+<script src="app.js"></script>
+<script type="text/javascript" src="mainController.js"></script>
+<script type="text/javascript" src="drawWorksService.js"></script>
+<script type="text/javascript" src="envService.js"></script>
+<script src="login/loginController.js"></script>
+<script type="text/javascript" src="projects/gprojectsCtrl.js"></script>
+<script type="text/javascript" src="projects/gprojectService.js"></script>    
+<script src="login/conRegController.js"></script>
+<script src="aboutmeCtrl.js" ></script>
+<script src="projects/createbidsCtrl.js" ></script>
+<script src="projects/submitbidsCtrl.js" ></script>
+    
+</body>
+</html>

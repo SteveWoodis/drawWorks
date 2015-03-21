@@ -1,0 +1,22 @@
+<p>General Registration Page</p>
+<form name="contractorForm" ng-submit="newContractor">
+<div>
+    <select ng-model="User.reg_contractorId">
+        <option ng-repeat="contractor in regContractors" value="{{contractor.contractorId}}">{{contractor.contractorName}}</option>
+    </select>     
+</div>
+    
+<div>
+    <input type="text" ng-model="User.reg_firstname" placeholder="First name"/>
+    <input type="text" ng-model="User.reg_lastname" placeholder="Last name"/>
+    <input type="text" ng-model="User.reg_streetAddress" placeholder="Street Address"/>
+    <input type="text" ng-model="User.reg_City" placeholder="City"/>
+    <input type="text" ng-model="User.reg_State" placeholder="State"/>
+    <input type="text" ng-model="User.reg_postalCode" placeholder="Postal Code"/>
+    <input type="text" ng-model="User.reg_password" placeholder="password"/>
+    <input type="text" ng-model="User.reg_email" placeholder="email"/>
+    <input type="text" ng-model="User.reg_username" placeholder="username"/>
+    <button ng-click="registerMe()">Register</button>
+</div>
+    
+</form>

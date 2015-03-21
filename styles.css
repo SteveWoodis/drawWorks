@@ -1,0 +1,23 @@
+html, body{
+	height: 1500px;
+    width: 100%;
+    background-color: beige;
+}
+.wrapper{
+    height: auto;
+    width: auto;
+ background: yellow;   
+}
+.heading {
+display: inline-block;
+background: white;
+}
+.container {
+    height: 70%;
+    width: 80%;   
+    background-color: white;
+    margin: auto;
+}
+.topnav {
+    height: 15%;   
+}

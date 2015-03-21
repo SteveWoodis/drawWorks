@@ -1,0 +1,23 @@
+
+<h1> This is your About Me Page</h1>
+
+<h2>Your email address, password and username are not editable.</h2>
+
+<form name="contractorForm" ng-submit="updateContractor">
+
+<div>
+    First Name<input type="text" ng-model="User.reg_firstname" placeholder="First name" value="{{firstname}}"/><br/>
+    Last Name<input type="text" ng-model="User.reg_lastname" placeholder="Last name" value=""/><br/>
+    Street<input type="text" ng-model="User.reg_streetAddress" placeholder="Street Address" value=""/><br/>
+    City<input type="text" ng-model="User.reg_City" placeholder="City" value=""/><br/>
+    State<input type="text" ng-model="User.reg_State" placeholder="State" value=""/><br/>
+    Postal Code<input type="text" ng-model="User.reg_postalCode" placeholder="Postal Code" value=""/><br/>
+    <!-- Password<input type="text" ng-model="User.reg_password" placeholder="password" value=""/><br/> -->
+    <!-- email<input type="text" ng-model="User.reg_email" placeholder="email" value=""/><br/> -->
+    <!-- username<input type="text" ng-model="User.reg_username" placeholder="username" value=""/><br/> -->
+    ContractorId<input type="text" ng-model="User.reg_contractorId" placeholder="contractorId" value=""/><br/>
+    <button ng-click="updateMe()">Save</button>
+</div>
+
+    
+</form>

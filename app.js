@@ -1,6 +1,10 @@
 var app = angular.module('drawWorksApp', ['firebase', 'ngRoute']);
 app.config(function($routeProvider){
     $routeProvider
+    .when('/landing', {
+        templateUrl: '/landing.html',
+        controller: 'landingCtr'
+    })
     .when('/login', {
         templateUrl: '/login/login.html',
         controller: 'loginController'

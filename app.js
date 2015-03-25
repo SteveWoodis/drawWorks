@@ -3,7 +3,7 @@ app.config(function($routeProvider){
     $routeProvider
     .when('/landing', {
         templateUrl: '/landing.html',
-        controller: 'landingCtr'
+        controller: 'landingCtrl'
     })
     .when('/login', {
         templateUrl: '/login/login.html',
@@ -52,7 +52,7 @@ app.config(function($routeProvider){
         }
     })
     .otherwise({
-        redirectTo: '/login'
+        redirectTo: '/landing'
     })
     });
 

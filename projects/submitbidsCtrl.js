@@ -1,5 +1,5 @@
 var app = angular.module('drawWorksApp');
-app.controller('submitbidsCtrl', function($scope, $firebaseObject, editBidAmount, submitBidRef, $routeParams, envService){
+app.controller('submitbidsCtrl', function($scope, $firebaseObject, editBidAmount, submitBidRef, $location, $routeParams, envService){
     var User = envService.getUser();
     $scope.bid = $firebaseObject(submitBidRef);
     User.$loaded(function(data){
@@ -8,8 +8,7 @@ app.controller('submitbidsCtrl', function($scope, $firebaseObject, editBidAmount
     $scope.User = User;
 
    $scope.project = $firebaseObject(editBidAmount);
-    console.log($scope.project);
-    
+       
 	$scope.project.$loaded().then(function (projects) {
         $scope.ProjectTitle = $scope.project.ProjectTitle;
         $scope.Street = $scope.project.Street;
@@ -21,20 +20,17 @@ app.controller('submitbidsCtrl', function($scope, $firebaseObject, editBidAmount
         $scope.contact = $scope.project.Contact;
         $scope.bidDate = $scope.project.BidDate;
         $scope.bidAmount = $scope.project.bidAmount;
-//        if($scope.project.bidAmount) {
-//            $scope.bidAmount = $scope.project.bidAmount;
-//        } else {
-//            $scope.bidAmount = "No bids"
-//        }
-        
     });
     
     $scope.submitBid = function(){
 //        $scope.bid = $firebaseObject(submitBidRef);
-        console.log($scope.bid)
-        $scope.bid.bidAmount = $scope.User.bidAmount
-        console.log($scope.bid)
+        $scope.bid.bidAmount = $scope.User.bidAmount;
+        if(User.reg_username === $scope.project.contractorId && $scope.project.bidAmount != ""){
+            alert('You have already submitted a bid for this project.')
+        }
+        else{
         $scope.bid.$save()
-        console.log('you made it to the submitBid function');
+       }
+        $location.path('/gprojects');
     }
 })

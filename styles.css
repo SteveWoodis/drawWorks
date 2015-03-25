@@ -5,6 +5,9 @@ html, body{
 display: inline-block;
 background: white;
 }
+#mynavbar-inverse {
+ background-color: #544B3E;   
+}
 
 .container {
     height: 100%;

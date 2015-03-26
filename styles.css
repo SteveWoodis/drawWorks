@@ -7,6 +7,13 @@ display: inline-block;
 #mynavbar-inverse {
  background-color: #544B3E;   
 }
+.info{
+ color: white;
+    font-size: 18px;
+}
+.personal{
+ color: black;
+}
 .title{
  text-align: center; 
  font-family: "comic sans ms";

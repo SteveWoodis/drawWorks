@@ -3,27 +3,65 @@ html, body{
 }
 .heading {
 display: inline-block;
-background: white;
 }
 #mynavbar-inverse {
  background-color: #544B3E;   
 }
-
+.title{
+ text-align: center; 
+ font-family: "comic sans ms";
+ font-size: 24px;
+ color: white;
+}
+.slogan{
+ text-align: center;   
+ font-family: "comic sans ms";
+ font-size: 14px;
+    color: white;
+}
+h2{
+    margin: 0;     
+    color: #666;
+    padding-top: 90px;
+    font-size: 52px;
+    font-family: "trebuchet ms", sans-serif;    
+}
+.item{
+    background: #333;    
+    text-align: center;
+    height: 400px !important;
+}
+.carousel{
+    margin-top: 20px;
+}
+.bs-example{
+	margin: 20px;
+}
+.left{
+  display: inline-block;
+}
+.right{
+  display: inline-block;
+    float: right;
+}
 .container {
     height: 100%;
-    background-color: beige;
+   /* background-color: beige; */
+   
 }
 .header{
  display: block;   
 }
+
 .header .col-lg-8 {
     display: block; 
-    height: 100%;
+    height: 110px;
     border: 1px solid black;
 }
 .col-lg-4 {
-    height: 100%;
+    height: 110px;
     border: 1px solid black;
+    display: inline-block;
 }
 .topnav {
  display: block;   
@@ -45,7 +83,6 @@ background: white;
 }
 .col-lg-8 {
     height: 100%;
-    background-color: white;
     border: 1px solid black;
 }
 .footer {
@@ -70,10 +107,6 @@ height: 100%;
 .col-sm-4 {
     height: 100%;
   background-color: #5F5646;
-    border: 1px solid black;
-}
-.col-lg-4 {
-    height: 100%;
     border: 1px solid black;
 }
 .col-xs-12 {

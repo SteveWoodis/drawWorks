@@ -63,6 +63,7 @@ angular.module('drawWorksApp').service('envService', function envService($locati
     this.getUser = function(){
         uid = ref.getAuth() ? ref.getAuth().uid : null;
         if(!uid) {
+            console.log('uid',uid);
             return $location.path("/login");
         }
         console.log(uid);

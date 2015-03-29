@@ -11,6 +11,18 @@ display: inline-block;
  color: white;
     font-size: 18px;
 }
+
+.footer-info{
+ color: white;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.footer-info-right{
+ color: white;
+    float: right;
+    font-size: 12px;
+    margin-top: 10px;
+}
 .personal{
  color: black;
 }
@@ -26,12 +38,22 @@ display: inline-block;
  font-size: 14px;
     color: white;
 }
+.footer-inverse{
+height: 30px;
+    background-color: #615849;
+    color: white;
+}
+
 h2{
     margin: 0;     
     color: #666;
     padding-top: 90px;
     font-size: 52px;
     font-family: "trebuchet ms", sans-serif;    
+}
+.titleHeading{
+ font-size: 24px;
+    color: white;
 }
 .item{
     background: #333;    
@@ -63,11 +85,9 @@ h2{
 .header .col-lg-8 {
     display: block; 
     height: 110px;
-    border: 1px solid black;
 }
 .col-lg-4 {
     height: 110px;
-    border: 1px solid black;
     display: inline-block;
 }
 .topnav {
@@ -78,7 +98,6 @@ h2{
     display: block; 
     /* background-color: #5F5646; */
     background-color: transparent;
-    border: 1px solid black;
 }
 .main {
  display: block;   
@@ -86,50 +105,71 @@ h2{
 .main .col-lg-2 {
     height: 100%;
     display: block; 
-    border: 1px solid black;
 }
 .col-lg-8 {
     height: 100%;
-    border: 1px solid black;
+}
+.spacer {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+}
+.search-group{
+ display: inline-block;
+}
+.search-button{
+ float: right;
+ display: inline-block;
 }
 .footer {
  display: block;   
 }
+a:link {color: #ffffff; text-decoration: underline; }
+a:active {color: #fff; text-decoration: underline; }
+a:visited {color: #008000; text-decoration: underline; }
+a:hover {color: #ff0000; text-decoration: none; }
+
 .footer .col-sm-1 {
     height: 100%;
     
   background-color: #5F5646;
-    border: 1px solid black;
 }
 .col-sm-2 {
     height: 100%;
   background-color: #5F5646; 
-    border: 1px solid black;
 }
 .col-sm-3 {
 height: 100%;
   background-color: #5F5646;
-    border: 1px solid black;
 }
 .col-sm-4 {
     height: 100%;
   background-color: #5F5646;
-    border: 1px solid black;
 }
 .col-xs-12 {
     height: 100%;
-    border: 1px solid black;
 }
-.col-lg-1 {
+.col-lg-6 {
+    display: inline-block;
     height: 100%;
-    border: 1px solid black;
 }
-.col-lg-3 {
-    height: 100%;
-    border: 1px solid black;
+.col-xs-6{
+    display: inline-block;
+    height: 50px;
 }
 .col-lg-2 {
     height: 100%;
     background-color: transparent;
-    border: 1px solid black;
+}
+.col-xs-10{
+     height: 100%;
+    display: inline-block;
+}
+.col-xs-2{
+      height: 100%;
+    display: inline-block; 
+}
+.col-xs-1{
+    height: 100%;
+    display: inline-block;   
 }

@@ -1,5 +1,5 @@
 
-    <p>All Projects</p>
+    <p class="info">All Projects</p>
     
     <ul>
         <li ng-repeat="project in projects ">
@@ -8,10 +8,9 @@
                <!-- <span>(by {{ project.username }})</span> -->
             </a>
         </li>
-    </ul>
+    </ul><br/>
     
     <form name="newProjectForm">
         <button ng-disabled="User.reg_contractorId != 1" ng-click="createProjects()">Add A New Project</button>
     </form>
-
-</div>
+    <br/>

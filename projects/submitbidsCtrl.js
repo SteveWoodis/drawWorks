@@ -25,7 +25,9 @@ app.controller('submitbidsCtrl', function($scope, $firebaseObject, editBidAmount
     $scope.submitBid = function(){
 //        $scope.bid = $firebaseObject(submitBidRef);
         $scope.bid.bidAmount = $scope.User.bidAmount;
-        if(User.reg_username === $scope.project.contractorId && $scope.project.bidAmount != ""){
+        $scope.bid.scontractorId = $scope.User.reg_username;
+        console.log('$scope.bid.scontractorId', $scope.bid.scontractorId);
+        if(User.reg_username === $scope.project.scontractorId && $scope.project.bidAmount != ""){
             alert('You have already submitted a bid for this project.')
         }
         else{

@@ -1,17 +1,17 @@
-<h1> Submit Bid on Project X</h1>
+<h1 class="titleHeading"> Submit Bid on {{ProjectTitle}}</h1><br/>
 <form>
-   Project Title: {{ProjectTitle}}<br/>
-   Street: {{Street}}<br/>
-    City:{{City}}<br/>
-    State:{{State}}<br/>
-    Postal Code:{{PostalCode}}<br/>
-    Fax:{{Fax}}<br/>
-    Phone:{{Phone}}<br/>
-    Bid Date:{{bidDate}}<br/>
-    Contact:{{contact}}<br/>
-    Bid Amount: {{bidAmount}}<br/>
+   <div class="info">Project Title: {{ProjectTitle}}</div><br/>
+   <div class="info">Street: {{Street}}</div><br/>
+    <div class="info">City:{{City}}</div><br/>
+    <div class="info">State:{{State}}</div><br/>
+    <div class="info">Postal Code:{{PostalCode}}</div><br/>
+    <div class="info">Fax:{{Fax}}</div><br/>
+    <div class="info">Phone:{{Phone}}</div><br/>
+    <div class="info">Bid Date:{{bidDate}}</div><br/>
+    <div class="info">Contact:{{contact}}</div><br/>
+    <div class="info">Bid Amount: {{bidAmount}}</div><br/>
     
     <input ng-model="User.bidAmount" placeholder="Enter Bid Amount"/>
     <button ng-click="submitBid()">Submit Bid</button>
          
-</form>
+</form><br/>

@@ -1,9 +1,9 @@
 var app = angular.module('drawWorksApp');
 app.controller('gprojectsCtrl', function($scope, getProjectsRef, $firebaseArray, $location, envService){
     var User = envService.getUser();
-    User.$loaded(function(data){
+    //User.$loaded(function(data){
         
-    }); 
+    //}); 
     $scope.User = User;
     
 //    console.log(getProjectsRef);

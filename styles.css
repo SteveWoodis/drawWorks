@@ -1,17 +1,23 @@
 html, body{
     background-image:url('background.jpg');
 }
-.heading {
-display: inline-block;
-}
+
 #mynavbar-inverse {
  background-color: #544B3E;   
+}
+.navigation {
+ width: 100%;
+    
 }
 .info{
  color: white;
     font-size: 18px;
 }
-
+.white {
+ color: white;
+    font-size: 24px;
+    padding-left: 20px;
+}
 .footer-info{
  color: white;
     font-size: 12px;
@@ -26,17 +32,39 @@ display: inline-block;
 .personal{
  color: black;
 }
-.title{
- text-align: center; 
+.landing {
+ background-color: #323232;   
+}
+.l-title{
  font-family: "comic sans ms";
- font-size: 24px;
- color: white;
+ font-size: 30px;
+ display: block;
+    text-align: left;
+}
+.l-heading {
+    display: block;
+    font-family: "comic sans ms";
+    font-size: 16px;
+    text-align: left;
+    padding-bottom: -20px;
+}
+.r-title{
+ text-align: right; 
+ font-family: "comic sans ms";
+ font-size: 32px;
+ display: block;
+}
+.r-heading {
+    text-align: right;
+    display: inline-block;
+    font-family: "comic sans ms";
+    font-size: 14px;
 }
 .slogan{
  text-align: center;   
  font-family: "comic sans ms";
  font-size: 14px;
-    color: white;
+   
 }
 .footer-inverse{
 height: 30px;
@@ -60,12 +88,6 @@ h2{
     text-align: center;
     height: 400px !important;
 }
-.carousel{
-    margin-top: 20px;
-}
-.bs-example{
-	margin: 20px;
-}
 .left{
   display: inline-block;
 }
@@ -74,17 +96,38 @@ h2{
     float: right;
 }
 .container {
-    height: 100%;
+    width: 100%;
    /* background-color: beige; */
    
 }
-.header{
- display: block;   
+.photo{
+ width: 330px;
+    height: 180px;
+    float: right;
+    
+}
+ .header{
+     height: 100%;
+ display: block; 
+ background-color: #FEFEFE;
+ margin-top: 10px;
+width: 100%
+ margin-left: 15px;
+ margin-right: 15px;
+ padding-left: 10px;
+ padding-right: 10px; 
+    
+}
+video {
+  float: right;
+  margin-right: 20px;
+    
 }
 
 .header .col-lg-8 {
     display: block; 
     height: 110px;
+    
 }
 .col-lg-4 {
     height: 110px;
@@ -96,23 +139,25 @@ h2{
 .topnav .col-xs-12{
     height: 100%;
     display: block; 
-    /* background-color: #5F5646; */
-    background-color: transparent;
+    background-color: #346665;
 }
-.main {
- display: block;   
+
+.row .main {
+ display: block; 
+ width: 100%;
+ margin: 0px;
+ padding: 0px;
 }
-.main .col-lg-2 {
-    height: 100%;
-    display: block; 
-}
+
 .col-lg-8 {
     height: 100%;
 }
+
 .spacer {
     margin-left: 10px;
     margin-right: 10px;
     display: inline-block;
+    
 }
 .search-group{
  display: inline-block;
@@ -124,10 +169,10 @@ h2{
 .footer {
  display: block;   
 }
-a:link {color: #ffffff; text-decoration: underline; }
-a:active {color: #fff; text-decoration: underline; }
-a:visited {color: #008000; text-decoration: underline; }
-a:hover {color: #ff0000; text-decoration: none; }
+a:link {color: #ffffff; font-size: 16px; text-decoration: none; }
+a:active {color: #fff;  font-size: 16px; text-decoration: none; }
+a:visited {color: #FEFEFE; font-size: 16px; text-decoration: none; }
+a:hover {color: #ff0000; font-size: 16px; text-decoration: none; }
 
 .footer .col-sm-1 {
     height: 100%;
@@ -159,7 +204,6 @@ height: 100%;
 }
 .col-lg-2 {
     height: 100%;
-    background-color: transparent;
 }
 .col-xs-10{
      height: 100%;

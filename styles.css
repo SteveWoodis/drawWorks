@@ -13,14 +13,26 @@ html, body{
     font-family: 'Chief_Blueprint';
     src: url('Chief_Blueprint.eot');
     src: url('Chief_Blueprint.eot?#iefix') format('embedded-opentype'),
-    url('Chief_Blueprint-webfont.woff') format('woff'),
     url('Chief_Blueprint.ttf') format('truetype'),
     url('Chief_Blueprint-webfont.svg#FontName') format('svg');
     font-weight: normal;
     font-style: normal;
 }
-
-
+.signup {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    font-size: 24px;   
+}
+.normal {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    font-size: 14px; 
+}
+.hilite {
+    font-family: 'Arial', sans-serif;
+    color: aqua;
+    font-size: 24px; 
+}
 .info{
     color: white;
     font-size: 18px;
@@ -38,16 +50,22 @@ html, body{
     padding-left: 20px;
     text-align: left;
 }
-.footer-info{
+.footer-info-left{
     color: white;
     font-size: 12px;
     margin-top: 10px;
+    display: inline-block;
 }
 .footer-info-right{
     color: white;
     float: right;
     font-size: 12px;
     margin-top: 10px;
+    display: inline-block;
+}
+.social {
+ height: 20px;
+    width: 20px;
 }
 .personal{
     color: black;
@@ -60,29 +78,31 @@ html, body{
 }
 .l-title{
     font-family: 'Chief_Blueprint', sans-serif;
-    font-size: 30px;
+    font-size: 32px;
     display: block;
     text-align: left;
 }
 .l-heading {
     display: block;
     font-family: 'Chief_Blueprint', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     text-align: left;
     padding-bottom: -20px;
     
 }
 .r-title{
     text-align: right; 
-    font-family: "comic sans ms";
-    font-size: 32px;
+     font-family: 'Chief_Blueprint', sans-serif;
+    font-size: 38px;
     display: block;
+    
 }
 .r-heading {
-    text-align: right;
-    display: inline-block;
-    font-family: "comic sans ms";
-    font-size: 14px;
+    text-align: right; 
+     font-family: 'Chief_Blueprint', sans-serif;
+    font-size: 18px;
+    display: block;
+    padding-top: -10px;
 }
 .slogan{
     text-align: center;   
@@ -91,7 +111,7 @@ html, body{
    
 }
 .footer-inverse{
-height: 30px;
+    height: 30px;
     background-color: #615849;
     color: white;
 }

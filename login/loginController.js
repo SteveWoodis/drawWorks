@@ -13,7 +13,7 @@ app.controller('loginController',function($scope, $rootScope, envService, $locat
         $scope.reg_email = '';
         $scope.reg_password = '';
 	}
-    console.log(User);  
+    console.log('THe user is ', User.uid);  
       
     $scope.registerMe = function(){
       $location.path('/registration'); 

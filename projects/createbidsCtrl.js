@@ -2,9 +2,9 @@ var app = angular.module('drawWorksApp');
 app.controller('createbidsCtrl',function($scope,$location, createProjectsRef, envService, $firebaseArray){
     
     var contractor = envService.getUser();
-    contractor.$loaded(function(data){
+    //contractor.$loaded(function(data){
         
-    }); 
+    //}); 
     
     console.log(contractor);
     $scope.projects = $firebaseArray(createProjectsRef)

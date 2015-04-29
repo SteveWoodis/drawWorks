@@ -1,22 +1,22 @@
-<p>General Registration Page</p>
+<p class="white">General Registration Page</p>
 <form name="contractorForm" ng-submit="newContractor">
 <div>
-    <select ng-model="User.reg_contractorId">
+    <select class="tab" ng-model="User.reg_contractorId">
         <option ng-repeat="contractor in regContractors" value="{{contractor.contractorId}}">{{contractor.contractorName}}</option>
     </select>     
 </div>
     
 <div>
-    <input type="text" ng-model="User.reg_firstname" placeholder="First name"/><br/>
-    <input type="text" ng-model="User.reg_lastname" placeholder="Last name"/><br/>
-    <input type="text" ng-model="User.reg_streetAddress" placeholder="Street Address"/><br/>
-    <input type="text" ng-model="User.reg_City" placeholder="City"/><br/>
-    <input type="text" ng-model="User.reg_State" placeholder="State"/><br/>
-    <input type="text" ng-model="User.reg_postalCode" placeholder="Postal Code"/><br/>
-    <input type="text" ng-model="User.reg_password" placeholder="password"/><br/>
-    <input type="text" ng-model="User.reg_email" placeholder="email"/><br/>
-    <input type="text" ng-model="User.reg_username" placeholder="username"/><br/>
-    <button ng-click="registerMe()">Register</button><br/>
+    <input class="tab" type="text" ng-model="User.reg_firstname" placeholder="First name"/><br/>
+    <input class="tab" type="text" ng-model="User.reg_lastname" placeholder="Last name"/><br/>
+    <input class="tab" type="text" ng-model="User.reg_streetAddress" placeholder="Street Address"/><br/>
+    <input class="tab" type="text" ng-model="User.reg_City" placeholder="City"/><br/>
+    <input class="tab" type="text" ng-model="User.reg_State" placeholder="State"/><br/>
+    <input class="tab" type="text" ng-model="User.reg_postalCode" placeholder="Postal Code"/><br/>
+    <input class="tab" type="text" ng-model="User.reg_password" placeholder="password"/><br/>
+    <input class="tab" type="text" ng-model="User.reg_email" placeholder="email"/><br/>
+    <input class="tab" type="text" ng-model="User.reg_username" placeholder="username"/><br/>
+    <button class="tab" ng-click="registerMe()">Register</button><br/>
 </div>
     
 </form>

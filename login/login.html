@@ -1,22 +1,26 @@
- <br/>
+<div class="landing"> <br/>
 <br/>
 <br/>
-<div>
-        <a href="/#/registration">Register</a><br/>
-        <br/>
-        <br/>
-        <br/>
-</div>
-
-<div>
-    <input type="text" ng-model="User.reg_email" placeholder="email"/>
-    <input type="text" ng-model="User.reg_password" placeholder="password"/>
+<div class="row">
+    <div class="col-lg-8" class="register">
+        
+        <p class="white">Not a member yet?</p>
+        <p class="white">Go to the Registration Page and <a href="/#/registration"><span class="hilite">Sign Up</span></a><br/></p>
+     </div>   
+    <div class="col-lg-4" class="signin"  >
+        <p class="white">I'm a member!</p>
+        <p class="white">Sign In</p>
+        <input type="text" ng-model="User.reg_email" placeholder="email"/><br/>
+        <input type="text" ng-model="User.reg_password" placeholder="password"/><br/>
     
-    <button ng-click="logMeIn()">Log In</button><br/>
-   
+        <button ng-click="logMeIn()">Log In</button><br/>
+    </div>
 </div>
-<div>
-    <button ng-click="logOut()">Log Out</button>
+<div class="logout-user">
+    <span ng-show="authData">
+        {{ authData.name }} | <a href="#" ng-click="authObj.$unauth()"><p class="logout">Logout</p></a>
+      </span>
+    <p class="logout">This is a test</p>
 </div>
 <br/>
 <br/>
@@ -35,4 +39,5 @@
 <br/>
 <br/>
 <br/>
+</div>    
 

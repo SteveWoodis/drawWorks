@@ -73,4 +73,10 @@ angular.module('drawWorksApp').service('envService', function envService($locati
      this.globalUserName = function(){
         return gUserName;
     }
+    this.logOut = function(){
+        
+    }
+     
+     
+     
 });

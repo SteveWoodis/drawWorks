@@ -17,6 +17,10 @@ app.config(function($routeProvider){
         templateUrl: 'Aboutme.html',
         controller: 'aboutMeCtrl'
     })
+    .when('/HowItWorks', {
+        templateUrl: 'HowItWorks.html',
+        controller: 'HowItWorksCtrl'
+    })
     .when('/gprojects', {
      templateUrl: '/projects/gprojects.html',
         controller: 'gprojectsCtrl',

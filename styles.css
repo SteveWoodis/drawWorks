@@ -25,6 +25,10 @@ html, body{
     float: right;
     display: inline-block;
 }
+.balance {
+    margin-top: 1px;
+
+}
 .register {
     font-family: 'Arial', sans-serif;
     color: white;
@@ -61,10 +65,24 @@ html, body{
     color: white;
     font-size: 18px;
 }
+.large-white {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    font-size: 40px;
+    padding-left: 20px;
+    display: inline-block;
+}
 .white {
     font-family: 'Arial', sans-serif;
     color: white;
-    font-size: 24px;
+    font-size: 26px;
+    padding-left: 20px;
+    display: inline-block;
+}
+.tiny-white {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    font-size: 16px;
     padding-left: 20px;
 }
 .r-white {
@@ -73,6 +91,7 @@ html, body{
     font-size: 24px;
     padding-left: 20px;
     text-align: left;
+    display: inline-block;
 }
 .footer-info-left{
     color: white;
@@ -267,6 +286,14 @@ height: 100%;
     display: inline-block;
     height: 100%;
 }
+.col-lg-7 {
+    display: inline-block;
+    height: 100%;
+}
+.col-lg-5 {
+    display: inline-block;
+    height: 100%;
+}
 .col-lg-8 {
     display: inline-block;
     height: 100%;
@@ -277,7 +304,7 @@ height: 100%;
 }
 .col-xs-6{
     display: inline-block;
-    height: 50px;
+    height: 100%;
 }
 .col-lg-2 {
     height: 100%;
@@ -289,6 +316,11 @@ height: 100%;
 .col-xs-2{
       height: 100%;
     display: inline-block; 
+
+}
+.col-xs-4 {
+    height: 100%;
+    display: inline-block;
 }
 .col-xs-1{
     height: 100%;

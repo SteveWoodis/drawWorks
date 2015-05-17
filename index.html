@@ -29,14 +29,22 @@
         <div class="container-fluid" >
             <div class="col-xs-12">
                 <ul class="nav navbar-nav">
-                
-                    <li class="spacer"><a href="/#/landing"> Home </a></li>
-                    <li class="spacer"><a href="/#/createProjects">Submit Projects for Bids</a></li>
-                    <li class="spacer"><a href="/#/gprojects">Find Projects to Bid On</a></li>
-                    <li class="spacer"><a href="/#/HowItWorks">How it Works</a></li>
-                    <li class="spacer"><a href="/">About Us</a></li>
-                    <li class="spacer"><a href="/#/aboutMe">Profile</a></li>
-                    <li class="spacer"><a href="/#/login"> Login/Sign Up</a></li>
+                    <li> </li>
+                    <li class="spacer"><button ng-click="homePage()" class="balance">Home</button></li>
+                    <li> </li>
+                    <li class="spacer"><button ng-click="testUserG()" class="balance">Submit Projects for Bids</button></li>
+                    <li> </li>
+                    <li class="spacer"><button ng-click="testUserC ()" class="balance">Bid on Projects</button></li>
+                    <li> </li>
+                    <li class="spacer"><button ng-click="howItWorks()" class="balance">How it Works</button></li>
+                    <li> </li>
+                    <li class="spacer"><button ng-click="aboutUs()" class="balance">About Us</button></li>
+                    <li> </li>
+                    <li class="spacer"><button ng-click="Profile()" class="balance">Profile</button></li>
+                    <li> </li>
+                    <li class="spacer"><button ng-click="login()" class="balance"> Login/Sign Up</a></li>
+                    <li> </li>
+                    <li class="spacer"><button ng-click="clearUser()" class="balance">LogOut</button></li>
                 </ul>
             </div>
         </div><!-- /.container-fluid -->
@@ -81,6 +89,7 @@
 <script src="projects/submitbidsCtrl.js" ></script>
 <script src="landingCtrl.js"></script>
 <script type="text/javascript" src="HowItWorksCtrl.js"></script>
+<script type="text/javascript" src="intCtrl.js"></script>
     
 </body>
 </html>

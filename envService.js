@@ -16,7 +16,7 @@ angular.module('drawWorksApp').service('envService', function envService($locati
         if (error) {
             console.log("Error creating user:", error);
             $timeout(function(){
-                $location.path('/login');
+                $location.path('/interrupt');
             });
         
         } else {
@@ -43,7 +43,7 @@ angular.module('drawWorksApp').service('envService', function envService($locati
    			if (error) {
     		 		alert("Login Failed!", error);
                     $timeout(function(){
-                        $location.path('/login');
+                        $location.path('/interrupt');
                     })
    			} else {
                 deferred.resolve(userData);
@@ -60,6 +60,11 @@ angular.module('drawWorksApp').service('envService', function envService($locati
         
     }
     
+    this.clearUser = function(userData){
+       console.log('You made it to clearUser');
+        ref.unauth();
+    }
+
     this.getUser = function(){
         uid = ref.getAuth() ? ref.getAuth().uid : null;
         if(!uid) {

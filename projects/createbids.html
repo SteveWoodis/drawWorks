@@ -1,12 +1,18 @@
 <h1 class="info"> Create a new Project</h1>
 <form>
     <input ng-model="User.ProjectTitle" placeholder="Project Title"/><br/>
+    <input ng-model="User.CompanyName" placeholder="Company Name"/><br/>
     <input ng-model="User.Street" placeholder="Street Address"/><br/>
     <input ng-model="User.City" placeholder="City"/><br/>
     <input ng-model="User.State" placeholder="State"/><br/>
     <input ng-model="User.PostalCode" placeholder="Postal Code"/><br/>
     <input ng-model="User.Fax" placeholder="Fax"/><br/>
     <input ng-model="User.Phone" placeholder="Phone"/><br/>
+    <input ng-model="User.LicenseNumber" placeholder="License Number"/><br/>
+    <input ng-model="User.ProjectReferenceNumberBIN" placeholder="Project Reference Number BIN"><br/>
+    <input ng-model="User.ProjectOwner" placeholder="Project Owner"><br/>
+    <input ng-model="User.ProjectDescription" placeholder="Project Description"><br/>
+    
     <input ng-model="User.BidDate" placeholder="Bid Date"/><br/>
     <input ng-model="User.Contact" placeholder="Contact"/><br/>
     <button ng-click="createBid()">Submit Project</button>

@@ -14,11 +14,16 @@ app.config(function($routeProvider){
         controller: 'conRegController'
     })
     .when('/aboutMe', {
-        templateUrl: 'Aboutme.html',
+        templateUrl: '/Aboutme.html',
         controller: 'aboutMeCtrl'
     })
+    .when('/interrupt', {
+        templateUrl: '/interrupt.html',
+        controller: 'intCtrl'
+    }
+        )
     .when('/HowItWorks', {
-        templateUrl: 'HowItWorks.html',
+        templateUrl: '/HowItWorks.html',
         controller: 'HowItWorksCtrl'
     })
     .when('/gprojects', {

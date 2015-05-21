@@ -22,11 +22,13 @@ html, body{
     font-family: 'Arial', sans-serif;
     color: white;
     font-size: 24px;  
-    float: right;
     display: inline-block;
+    margin-left: 10px;
 }
 .balance {
     margin-top: 1px;
+    background-color: transparent;
+    color: white;
 
 }
 .register {
@@ -65,6 +67,14 @@ html, body{
     color: white;
     font-size: 18px;
 }
+.indent {
+    margin-left: 20px;
+}
+.l-info {
+    color: white;
+    font-size: 18px;
+    margin-left: 30px;
+}
 .large-white {
     font-family: 'Arial', sans-serif;
     color: white;
@@ -76,8 +86,7 @@ html, body{
     font-family: 'Arial', sans-serif;
     color: white;
     font-size: 26px;
-    padding-left: 20px;
-    display: inline-block;
+     display: inline-block;
 }
 .tiny-white {
     font-family: 'Arial', sans-serif;
@@ -128,17 +137,17 @@ html, body{
 .l-heading {
     display: block;
     font-family: 'Chief_Blueprint', sans-serif;
-    font-size: 18px;
+    font-size: 17px;
     text-align: left;
     padding-bottom: -20px;
-    
+    margin-bottom: -1px;
 }
 .r-title{
     text-align: right; 
      font-family: 'Chief_Blueprint', sans-serif;
     font-size: 38px;
     display: block;
-    
+    margin-bottom: -1px;    
 }
 .r-heading {
     text-align: right; 
@@ -257,10 +266,33 @@ video {
 .footer {
  display: block;   
 }
-a:link {color: #ffffff; font-size: 16px; text-decoration: none; }
+/*a:link {color: #ffffff; font-size: 16px; text-decoration: none; }
 a:active {color: #fff;  font-size: 16px; text-decoration: none; }
-a:visited {color: #FEFEFE; font-size: 16px; text-decoration: none; }
-a:hover {color: #ff0000; font-size: 16px; text-decoration: none; }
+a:visited {color: #F4E753 font-size: 16px; text-decoration: none; }*/
+a:hover {color: #F4E753; font-size: 16px; text-decoration: none; }
+
+
+#Home {
+    background-color: transparent;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:6px;
+    color: #fff;
+    font-family: 'Arial';
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+}
+
+
+
+#Home:hover {
+    border: none;
+    background:red;
+    box-shadow: 0px 0px 1px #777;
+}
+
 
 .footer .col-sm-1 {
     height: 100%;

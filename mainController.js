@@ -6,6 +6,16 @@ app.controller('mainController', function($scope, $firebase, $location, envServi
 				envService.clearUser();
 				$location.path('/landing')
 		}
+		$scope.MyWorkspace = function(){
+			if(User.reg_email == ""){
+				$location.path('/interrupt')
+			}
+			else
+			{
+				$location.path('/MyWorkspace')
+			}
+
+		}
 		$scope.testUserG = function(){
 				console.log('User from the textUserG function ', User);
 				if(User.reg_email == ""){

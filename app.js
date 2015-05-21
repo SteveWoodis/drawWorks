@@ -17,6 +17,10 @@ app.config(function($routeProvider){
         templateUrl: '/Aboutme.html',
         controller: 'aboutMeCtrl'
     })
+    .when('/MyWorkspace', {
+        templateUrl: '/projects/MyWorkspace.html',
+        controller: 'MyWorkspace'
+    })
     .when('/interrupt', {
         templateUrl: '/interrupt.html',
         controller: 'intCtrl'

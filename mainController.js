@@ -1,12 +1,13 @@
 var app = angular.module('drawWorksApp');
 app.controller('mainController', function($scope, $firebase, $location, envService){
-			var User = envService.getUser();
+			//var User = envService.getUser();
 
 		$scope.clearUser = function(){
 				envService.clearUser();
 				$location.path('/landing')
 		}
 		$scope.MyWorkspace = function(){
+			var User = envService.getUser();
 			if(User.reg_email == ""){
 				$location.path('/interrupt')
 			}
@@ -17,7 +18,7 @@ app.controller('mainController', function($scope, $firebase, $location, envServi
 
 		}
 		$scope.testUserG = function(){
-				console.log('User from the textUserG function ', User);
+				var User = envService.getUser();
 				if(User.reg_email == ""){
 					$location.path('/interrupt')
 				}
@@ -26,13 +27,17 @@ app.controller('mainController', function($scope, $firebase, $location, envServi
 					}
 		}
 		$scope.testUserC = function(){
-				console.log('User from the textUserC function ', User);
+				var User = envService.getUser();
 				if(User.reg_email == ""){
 					$location.path('/interrupt')
 				}
 				else{
 				$location.path('/createProjects')
 					}
+		}
+		$scope.signUp = function(){
+			$location.path('/registration')
+
 		}
 		$scope.homePage = function(){
 			$location.path('/landing')

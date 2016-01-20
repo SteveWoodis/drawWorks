@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="drawWorksApp">
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
@@ -32,9 +32,9 @@
                     <li> </li>
                     <li class="spacer"><input type="submit" ng-click="homePage()" name="Home" value="Home" id="Home" /></li>
                     <li> </li>
-                    <li class="spacer"><input type="submit" ng-click="MyWorkspace()" name="My Workspace" value="My Workspace" id="Home"/></li>
-                    <li> </li>
                     <li class="spacer"><input type="submit" ng-click="testUserG()" name="Submit Projects for Bids" value="Submit Projects" id="Home" /></li>
+                    <li> </li>
+                    <li class="spacer"><input type="submit" ng-click="MyWorkspace()" name="Workspace" value="Workspace" id="Home" /></li>
                     <li> </li>
                     <li class="spacer"><input type="submit" ng-click="testUserC()" name="Find Projects" value="Find Projects" id="Home" /></li>
                     <li> </li>
@@ -43,6 +43,8 @@
                     <li class="spacer"><input type="submit" ng-click="aboutUs()" name="About Us" value="About Us" id="Home" /></li>
                     <li> </li>
                     <li class="spacer"><input type="submit" ng-click="login()" name="Login" value="Login" id="Home" /></li>
+                    <li> </li>
+                    <li class="spacer"><input type="submit" ng-click="signUp()" name="SignUp" value="SignUp" id="Home" /></li>
                     <li> </li>
                     <li class="spacer"><input type="submit" ng-click="clearUser()" name="Log Out" value="Log Out" id="Home" /></li>
                 </ul>
@@ -71,11 +73,14 @@
 <script src="https://code.angularjs.org/1.3.13/angular-route.min.js"></script>
 <!-- Firebase -->
 <script src="https://cdn.firebase.com/js/client/2.1.2/firebase.js"></script>
-
+<!-- Drag and Drop -->
+<script src="/src/angular-dragdrop.min.js"></script>
 <!-- AngularFire -->
 <script src="https://cdn.firebase.com/libs/angularfire/1.0.0/angularfire.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/jquery-ui.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<!-- Controllers -->
 <script src="app.js"></script>
 <script type="text/javascript" src="mainController.js"></script>
 <script type="text/javascript" src="drawWorksService.js"></script>
@@ -88,8 +93,10 @@
 <script src="projects/createbidsCtrl.js" ></script>
 <script src="projects/submitbidsCtrl.js" ></script>
 <script src="landingCtrl.js"></script>
-<script type="text/javascript" src="HowItWorksCtrl.js"></script>
-<script type="text/javascript" src="intCtrl.js"></script>
-    
+<script src="HowItWorksCtrl.js"></script>
+<script src="intCtrl.js"></script>
+<script src="projects/myWorkspace.js"></script>
+<script src="login/editRegCtrl.js"></script>
+   
 </body>
 </html>

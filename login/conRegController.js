@@ -4,7 +4,7 @@ app.controller('conRegController', function($scope, $location, envService){
     $scope.regContractors = [
         {contractorId: 1, contractorName: 'General Contractor'},
         {contractorId: 2, contractorName: 'Sub-Contractor'},
-        {contractorId: 3, contractorName: 'Home Owner'}
+        {contractorId: 3, contractorName: 'Project Owner'}
     ];
     $scope.regConstruction = [
         {constructionId: 1, constructionType: 'Commercial'},
@@ -17,7 +17,7 @@ app.controller('conRegController', function($scope, $location, envService){
     $scope.registerMe = function(){
         var User = $scope.User;   
         envService.createUser(User);
-            $location.path('/aboutMe');
+        $location.path('/aboutMe');
         
     }
 })

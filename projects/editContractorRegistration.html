@@ -7,37 +7,50 @@
 </div>
     
 <div>
-    <p class="r-white">Company Name</p><br/>
+    Company Name
     <input class="tab" type="text" ng-model="User.reg_CompanyName" placeholder="Company Name"/><br/>
-    <p class="r-white">General Contractor Name</p><br/>
+    General Contractor Name
     <input class="tab" type="text" ng-model="User.GeneralContractorName" placeholder="General Contractor Name"/><br/>
-    <p class="r-white">First Name</p><br/>
+    Trade License Number
+    <input class="tab" type="text" ng-model="User.reg_TradeLicenseNumber" placeholder="Trade License Number"/><br/>
+    City Business License Number
+    <input class="tab" type="text" ng-model="User.reg_CityBusinessLicenseNumber" placeholder="City Business License Number"/><br/>
+    First Name
     <input class="tab" type="text" ng-model="User.reg_firstname" placeholder="First name"/><br/>
-    <p class="r-white">Last Name</p><br/>
+    Last Name
     <input class="tab" type="text" ng-model="User.reg_lastname" placeholder="Last name"/><br/>
-    <p class="r-white">Street Address</p><br/>
+    Street Address
     <input class="tab" type="text" ng-model="User.reg_streetAddress" placeholder="Street Address"/><br/>
-    <p class="r-white">City</p><br/>
+    City
     <input class="tab" type="text" ng-model="User.reg_City" placeholder="City"/><br/>
-    <p class="r-white">State</p><br/>
+    State
     <input class="tab" type="text" ng-model="User.reg_State" placeholder="State"/><br/>
-    <p class="r-white">Zip Code</p><br/>
+    Zip Code
     <input class="tab" type="text" ng-model="User.reg_CompanypostalCode" placeholder="Company Postal Code"/><br/>
-    <p class="r-white">Password</p><br/>
-    <input class="tab" type="text" ng-model="User.reg_password" placeholder="password"/><br/>
-    <p class="r-white">Email</p><br/>
-    <input class="tab" type="text" ng-model="User.reg_email" placeholder="email"/><br/>
-    <p class="r-white">Username</p><br/>
+    Username   
     <input class="tab" type="text" ng-model="User.reg_username" placeholder="username"/><br/>
-    <p class="r-white">Radius for Work</p><br/>
+    Postal Codes for Work
     <input class="tab" type="text" ng-model="User.reg_PostalCodesForWork" placeholder="Postal Codes For Work"/><br/>
-    <p class="tiny-white">Type of Construction Desired:</p><br/>
+    
+    <p class="tiny-white">Type of Construction Desired:</p>
     <select class="tab" ng-model="User.reg_constructionId">
         <option ng-repeat="contractor in regConstruction" value="{{contractor.constructionId}}">{{contractor.constructionType}}</option>
     </select>
     <br/> 
+    Number of Employees
+    <input class="tab" type="text" ng-model="User.reg_NumberofEmployees" placeholder="Number of Employees"/><br/>
+    Affiliations
+    <input class="tab" type="text" ng-model="User.reg_Affiliations" placeholder="Affiliations"/><br/>
+    Web Site
+    <input class="tab" type="text" ng-model="User.WebAddress" placeholder="Web Address"/><br/>
+    Resume
+    <input class="tab" type="text" ng-model="User.reg_Resume" placeholder="Resume"/><br/>
+    Years in Business
+    <input class="tab" type="text" ng-model="User.reg_YearsInBusiness" placeholder="Years In Business"/><br/>
+    Past Projects
+    <input class="tab" type="text" ng-model="User.reg_PastProjects" placeholder="Past Projects"/><br/>
     
-       <button class="tab" ng-click="registerMe()">Register</button><br/>
+    <button class="tab" ng-click="saveMe()">Save</button><br/>
 </div>
     
 </form>

@@ -1,0 +1,65 @@
+<html ng-app="drawWorksApp">
+  <head lang="en">
+    <meta charset="utf-8">
+    <title>Drag &amp; Drop: MVC Frameworks</title>
+    
+
+
+    <script type="text/javascript">
+        $scope.startCallback = function(event, ui, title) {
+          console.log('You started draggin: ' + title.title);
+          $scope.draggedTitle = title.title;
+        };
+
+        $scope.stopCallback = function(event, ui) {
+          console.log('Why did you stop draggin me?');
+        };
+
+        $scope.dragCallback = function(event, ui) {
+          console.log('hey, look I`m flying');
+        };
+
+        $scope.dropCallback = function(event, ui) {
+          console.log('hey, you dumped me :-(' , $scope.draggedTitle);
+        };
+
+        $scope.overCallback = function(event, ui) {
+          console.log('Look, I`m over you');
+        };
+
+        $scope.outCallback = function(event, ui) {
+          console.log('I`m not, hehe');
+        };
+      });
+    </script>
+  </head>
+  <body>
+    <div ng-controller="oneCtrl">
+      <div class='contentWrapper ng-cloak'>
+        <div class='content'>
+          <div class="row-fluid">
+            <ul class="thumbnails">
+              <li class="span3" style='margin-left:10px;' ng-repeat="image in images">
+                <div class="thumbnail">
+                  <div class="caption">
+                    <div class='emage'><img ng-src="assets/img/{{image.thumb}}"/></div>
+                    <p><div class="btn btn-droppable" data-drop="true" ng-model='list1' jqyoui-droppable="{index: {{$index}}, onDrop:'dropCallback',onOver: 'overCallback', onOut: 'outCallback'}">
+                      <div class="btn btn-info btn-draggable" ng-show="list1[$index].title" data-drag="{{list1[$index].drag}}" data-jqyoui-options="{revert: 'invalid'}" ng-model="list1" jqyoui-draggable="{index: {{$index}},placeholder:true,animate:true}">{{list1[$index].title}}</div>
+                    </div></p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-inner">
+        <div class="container form-inline" style="text-align: center;">
+          <div class="btn btn-droppable" ng-repeat="item in list2" data-drop="true" ng-model='list2' jqyoui-droppable="{index: {{$index}}}">
+            <div class="btn btn-info btn-draggable" data-drag="{{item.drag}}" data-jqyoui-options="{revert: 'invalid'}" ng-model="list2" jqyoui-draggable="{index: {{$index}},placeholder:true,animate:true, onStart:'startCallback(item, $index)', onStop: 'stopCallback', onDrag: 'dragCallback'}" ng-hide="!item.title">{{item.title}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

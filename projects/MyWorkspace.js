@@ -1,8 +1,12 @@
 var app = angular.module('drawWorksApp');
-app.controller('MyWorkspace', function($scope, $location){
+app.controller('MyWorkspace', function($scope, $http){
 
-        $scope.javaScriptCall = function(){
-          console.log('I`m not, hehe, but I soon will be.');
-        }
+      $http.get("http://www.w3schools.com/angular/customers.php")
+    .then(function (response) {$scope.names = response.data.records;});
 
 })
+
+
+app.controller('customersCtrl', function($scope, $http) {
+    
+});

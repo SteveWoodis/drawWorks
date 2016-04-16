@@ -9,24 +9,41 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <script type="text/javascript">
+        function drag(e){
+            e.dataTransfer.setData("text",e.target.id);
+            console.log ("This is drag function.", e);
+        }
+        function drop(e){
+            e.preventDefault();
+             var data = e.dataTransfer.getData("text");
+             e.target.appendChild(document.getElementById(data));
+            console.log ("THis is drop function", e);
+        }
+        function allowDrop(e){
+            e.preventDefault();
+            console.log ("This is allowDrop", e);    
+        }
+    </script>
 </head>
 <body ng-controller="mainController">
- <div class="container">
-     <div class="header"> 
-        <div class="col-lg-8">
-            <p class="l-title">Internet Bid Room</p>
-            <p class="l-heading"><strong>The Global Construction Meeting Place</strong></p>
-            <p class="l-heading"> <strong>General Contractors-Sub-Contractors-Project Owners</strong></p>
-        </div>
-        <div class="col-lg-4">
+ <div class="flex-container">
+     <div class="header">
+         <div class="col-lg-4">
+             <p class="l-title">Internet Bid Room</p>
+
+             <!--<p class="l-heading"> <strong>General Contractors-Sub-Contractors-Project Owners</strong></p>-->
+
+             <p class="l-heading"><strong>The Global Construction Meeting Place</strong></p>
+         </div>
+         <div class="col-lg-4">
             <p class="r-title">435-634-1450</p><br/>
-            <p class="r-heading"><strong>Dream - Plan - Build - Reality </strong></p>   
+            <!-- <p class="r-heading"><strong>Dream - Plan - Build - Reality </strong></p>  -->
                 
         </div> 
      </div>
-     <div class="row topnav">
-        <div class="container-fluid" >
+     <div class="flex-row">
+        <div class="flex-title" >
             <div class="col-xs-12">
                 <ul class="nav navbar-nav">
                     <li> </li>
@@ -51,13 +68,17 @@
             </div>
         </div><!-- /.container-fluid -->
      </div>
-     <div class="row main">     
+     <div class="flex-main">
         <div class="col-lg-12">
              <!-- Add your site or application content here -->
             <div class="viewer" ng-view></div>
+            
         </div>  
+        <!--<div class="col-lg-6">
+            <div style="background:yellow; height:250px; width:250px; position:relative;" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div> -->
      </div>
-     <div class="row footer">
+     <div class="flex-footer">
         <div class="col-xs-6">
             <p class="footer-info-left">All materials viewable on this site are copyrighted by the owner of the material</p>
             <p class="footer-info-left"> Copyright &#169; 2015 Draw Works</p>

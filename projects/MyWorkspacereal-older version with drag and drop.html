@@ -126,12 +126,13 @@ function removeEventSimple(obj,evt,fn) {
 	else if (obj.detachEvent)
 		obj.detachEvent('on'+evt,fn);
 }
+
 // -->
 </script>
 
 <div class="landing">
-	<div id="test" draggable="true">This is a drag and drop element with <code>position: absolute</code>.</div>
-<div id="test2" draggable="true">This is a drag and drop element with <code>position: fixed</code>.</div>
+	<div id="test" draggable="true" ondragstart="drag(event)" >This is a drag and drop element with <code>position: absolute</code>.</div>
+<div id="test2" draggable="true" ondragstart="drag(event)" >This is a drag and drop element with <code>position: fixed</code>.</div>
 
 	<br/>
 	<p class="white"> Welcome to your Workspace </p><br/>
@@ -144,6 +145,13 @@ function removeEventSimple(obj,evt,fn) {
 	<br/>
 	<br/>
 	<br/>
+	<div class="row">
+		<div class="col-lg-6">
+		</div>
+	 <div class="col-lg-6">
+            <div style="background:yellow; height:250px; width:250px; position:relative;" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+    </div>    
 	<br/>
 	<br/>
 	<br/>

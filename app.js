@@ -15,7 +15,7 @@ app.config(function($routeProvider){
     })
     .when('/MyWorkspace', {
         templateUrl: '/projects/MyWorkspacereal.html',
-        controller: 'MyWorkspace'
+        controller: 'MyWorkspaceRealCtrl'
     })
     .when('/login', {
         templateUrl: '/login/login.html',

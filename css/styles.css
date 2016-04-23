@@ -38,6 +38,7 @@ html, body{
     padding-top: 40px;
     width:100%;
     background-color: transparent;
+
 }
 table {
     width: 100%;
@@ -378,7 +379,7 @@ h2{
     background-color: #562A00;
     opacity: .80;
     width:100%;
-    justify-content: space-between;
+    justify-content: space-around;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;

@@ -19,58 +19,28 @@
 
     </tr>
   </thead>
-  <tr>
-    <td>Contractor</td>
-    <td>ABC Construction</td>
-    <td>123 California Ave.</td>
-    <td>Pleasant Grove</td>
-    <td>Utah</td>
-    <td>01111</td>
-    <td>111-111-1111</td>
-    <td>222-222-2222</td>
-    <td>10000-00001</td>
-    <td>Steve Woodis</td>
-    <td>Building Home on 136 S. 320 E</td>
-    <td>4/22/2016</td>
-    <td>ABC Construction</td>
+  <tr ng-repeat="project in bidlist">
+    <td>{{project.ProjectTitle}}</td>
+    <td>{{project.CompanyName}}</td>
+    <td>{{project.Address}}</td>
+    <td>{{project.City}}</td>
+    <td>{{project.State}}</td>
+    <td>{{project.PostalCode}}</td>
+    <td>{{project.Fax}}</td>
+    <td>{{project.Phone}}</td>
+    <td>{{project.ProjectReferenceNumber}}</td>
+    <td>{{project.ProjectOwner}}</td>
+    <td>{{project.ProjectDescription}}</td>
+    <td>{{project.BidDate}}</td>
+    <td>{{project.Contact}}</td>
   </tr>
-  <tr>
-    <td>{{ProjectTitle}}</td>
-    <td>{{CompanyName}}</td>
-    <td>{{Address}}</td>
-    <td>{{City}}</td>
-    <td>{{State}}</td>
-    <td>{{PostalCode}}</td>
-    <td>{{Fax}}</td>
-    <td>{{Phone}}</td>
-    <td>{{LicenseNumber}}</td>
-    <td>{{ProjectReferenceNumber}}</td>
-    <td>{{ProjectOwner}}</td>
-    <td>{{ProjectDescription}}</td>
-    <td>{{BidDate}}</td>
-    <td>{{Contact}}</td>
-  </tr>
-  <tr>
-    <td>Project Owner</td>
-    <td>Owner</td>
-    <td>110 South 40 West</td>
-    <td>Lehi</td>
-    <td>Utah</td>
-    <td>80808</td>
-    <td>555-555-5555</td>
-    <td>666-666-6666</td>
-    <td>10000-00003</td>
-    <td>Daphne Thomas</td>
-    <td>Home on 110 S 40 W</td>
-    <td>4/27/2016</td>
-    <td>Mark Messier</td>
-  </tr>
+
 
 </table>
 
 </div>
 
 <!--<table>
-  <tr ng-repeat="project in bidlist">
+
 
 </table>-->

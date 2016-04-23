@@ -34,6 +34,97 @@ html, body{
     color: white;
 
 }
+.table-spacer{
+    padding-top: 40px;
+    width:100%;
+    background-color: transparent;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+/* Zebra striping */
+tr:nth-of-type(odd) {
+    background: #eee;
+}
+tr:nth-of-type(even) {
+    background: #562A00;
+    color: #ffffff;
+}
+th {
+    background-color: #562A00;
+    color: white;
+    font-weight: bold;
+}
+td, th {
+    padding: 6px;
+    text-align: left;
+}
+/*
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+    /* Force table to not be like tables anymore */
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr { border: 0px  }
+
+    td {
+        /* Behave  like a "row" */
+        border: none;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    /*
+    Label the data
+    */
+    td:nth-of-type(1):before { content: "Project Title"; }
+    td:nth-of-type(2):before { content: "Company Name"; }
+    td:nth-of-type(3):before {content: "Address";}
+    td:nth-of-type(4):before { content: "City"; }
+    td:nth-of-type(5):before { content: "State"; }
+    td:nth-of-type(6):before { content: "Postal Code"; }
+    td:nth-of-type(7):before { content: "Fax"; }
+    td:nth-of-type(8):before { content: "Phone"; }
+    td:nth-of-type(9):before { content: "Project Ref Numnber"; }
+    td:nth-of-type(10):before { content: "Project Owner"; }
+    td:nth-of-type(11):before { content: "Description"; }
+    td:nth-of-type(12):before { content: "Bid Date"; }
+    td:nth-of-type(13):before { content: "Contact"; }
+}
+
+
+
+
+
+
+
 
 div#test,div#test2 {
     width: 150px;
@@ -252,7 +343,42 @@ h2{
     padding: 0;
     margin: 0;
     list-style: none;
+    width:100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
 
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.flex-navbar {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width:100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    background: #000;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+
+}
+
+
+.flex-landing {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background-color: #562A00;
+    opacity: .80;
+    width:100%;
+    justify-content: space-between;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -267,6 +393,7 @@ h2{
     margin: 0;
     list-style: none;
     height: 710px;
+    width:100%;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -284,6 +411,7 @@ h2{
     margin-right: 0;
     list-style: none;
     background-color: #000;
+    justify-content: space-between;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -296,7 +424,9 @@ h2{
 .flex-title{
     padding: 0;
     margin: 0 auto;
+    width:100%;
     list-style: none;
+    justify-content:space-between;
     background-color: #000;;
     display: -webkit-box;
     display: -moz-box;
@@ -497,6 +627,9 @@ height: 100%;
     height: 100%;
 }
 .col-lg-1 {
+    height: 100%;
+}
+.col-lg-12{
     height: 100%;
 }
 .col-xs-10{

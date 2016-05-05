@@ -30,12 +30,12 @@ app.config(function($routeProvider){
         templateUrl: '/HowItWorks.html',
         controller: 'HowItWorksCtrl'
     })
-    .when('/gprojects', {
-     templateUrl: '/projects/gprojects.html',
-        controller: 'gprojectsCtrl',
+    .when('/myCurrentProjects', {
+     templateUrl: '/projects/myCurrentProjects.html',
+        controller: 'myCurrentProjectsCtrl',
         resolve: {
-           getProjectsRef: function (gprojectService) {
-            return gprojectService.getProjects();
+           getProjectsRef: function (myCurrentProjectService) {
+            return myCurrentProjectService.getProjects();
             }
         }
     })
@@ -43,8 +43,8 @@ app.config(function($routeProvider){
      templateUrl: '/projects/createbids.html',
         controller: 'createbidsCtrl',
         resolve: {
-            createProjectsRef: function (gprojectService) {
-            return gprojectService.createProjects();
+            createProjectsRef: function (myCurrentProjectService) {
+            return myCurrentProjectService.createProjects();
             }
         }
     })
@@ -56,11 +56,11 @@ app.config(function($routeProvider){
             //threadRef: function (gprojectService, $route) {
             //return gprojectService.getThread($route.current.params.projectId);
             //},
-            editBidAmount: function (gprojectService, $route) {
-            return gprojectService.getProject($route.current.params.projectId);
+            editBidAmount: function (myCurrentProjectService, $route) {
+            return myCurrentProjectService.getProject($route.current.params.projectId);
             },
-            submitBidRef: function (gprojectService, $route) {
-            return gprojectService.updateProject($route.current.params.projectId);
+            submitBidRef: function (myCurrentProjectService, $route) {
+            return myCurrentProjectService.updateProject($route.current.params.projectId);
             }
         }
     })

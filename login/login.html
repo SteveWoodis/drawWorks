@@ -1,3 +1,28 @@
+<SCRIPT type=text/javascript>
+    function doClick(buttonName,e)
+    {
+        //the purpose of this function is to allow the enter key to
+        //point to the correct button to click.
+        var key;
+
+        if(window.event)
+            key = window.event.keyCode;     //IE
+        else
+            key = e.which;     //firefox
+
+        if (key == 13)
+        {
+            //Get the button the user wants to have clicked
+            var btn = document.getElementById(buttonName);
+            if (btn != null)
+            { //If we find the button click it
+                btn.click();
+                event.keyCode = 0;
+                console.log('You clicked Enter.');
+            }
+        }
+    }
+</SCRIPT>
 <div class="landing"> <br/>
 <br/>
 <br/>
@@ -11,13 +36,15 @@
         <p class="white">Member Sign In! </p><br/>
         
         <span class="white">Email</span><br/>
-        <input type="text" ng-model="User.reg_email"/><br/>
+        <input class="personal" type="text" ng-model="User.reg_email"/><br/>
         <span class="white">Password</span><br/>
-        <input type="text" ng-model="User.reg_password"/><br/>
+        <input class="personal" type="text" ng-model="User.reg_password"/><br/>
         <br/>
-        <button ng-click="logMeIn()">Log In</button><br/>
+
+        <button class="personal" ng-click="logMeIn()">Log In</button><br/>
+        <!-- <button class="personal" ng-click="doClick(Enter)" autofocus type="submit">Log In</button><br/> -->
     </div>
-</div>
+   </div>
 <div class="logout-user">
     <div> </div>
     <br/>
@@ -45,5 +72,5 @@
 <br/>
 <br/>
 <br/>
-</div>    
+</div>
 

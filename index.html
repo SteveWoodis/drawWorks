@@ -2,6 +2,7 @@
 <html ng-app="drawWorksApp" xmlns="http://www.w3.org/1999/html">
 <head>
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="favorite icon" href="/images/favicon.ico">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
@@ -49,11 +50,11 @@
                     <li> </li>
                     <li class="spacer"><input type="submit" ng-click="homePage()" name="Home" value="Home" id="Home" /></li>
                     <li> </li>
-                    <li class="spacer"><input type="submit" ng-click="testUserG()" name="Submit Projects for Bids" value="Submit Projects" id="Home" /></li>
+                    <li class="spacer"><input type="submit" ng-click="testUserC()" name="Submit Projects for Bids" value="Submit Projects" id="Home" /></li>
                     <li> </li>
-                    <li class="spacer"><input type="submit" ng-click="MyWorkspace()" name="Workspace" value="Workspace" id="Home" /></li>
-                    <li> </li>
-                    <li class="spacer"><input type="submit" ng-click="testUserC()" name="Find Projects" value="Find Projects" id="Home" /></li>
+                    <!-- <li class="spacer"><input type="submit" ng-click="MyWorkspace()" name="Workspace" value="Workspace" id="Home" /></li>
+                    <li> </li> -->
+                    <li class="spacer"><input type="submit" ng-click="myCurrentProjects()" name="My Current Projects" value="myCurrentProjects" id="Home" /></li>
                     <li> </li>
                     <li class="spacer"><input type="submit" ng-click="howItWorks()" name="How It Works" value="How It Works" id="Home" /></li>
                     <li> </li>
@@ -107,8 +108,8 @@
 <script type="text/javascript" src="drawWorksService.js"></script>
 <script type="text/javascript" src="envService.js"></script>
 <script src="login/loginController.js"></script>
-<script type="text/javascript" src="projects/gprojectsCtrl.js"></script>
-<script type="text/javascript" src="projects/gprojectService.js"></script>    
+<script type="text/javascript" src="projects/myCurrentProjectsCtrl.js"></script>
+<script type="text/javascript" src="projects/myCurrentProjectService.js"></script>
 <script src="login/conRegController.js"></script>
 <script src="aboutmeCtrl.js" ></script>
 <script src="projects/createbidsCtrl.js" ></script>

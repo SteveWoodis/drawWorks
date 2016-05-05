@@ -17,13 +17,13 @@ app.controller('mainController', function($scope, $firebase, $location, envServi
 			}
 
 		}
-		$scope.testUserG = function(){
+		$scope.myCurrentProjects = function(){
 				var User = envService.getUser();
 				if(User.reg_email == ""){
 					$location.path('/interrupt')
 				}
 				else{
-				$location.path('/gprojects')
+				$location.path('/myCurrentProjects')
 					}
 		}
 		$scope.testUserC = function(){

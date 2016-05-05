@@ -2,8 +2,12 @@
  * Created by Steve on 4/23/2016.
  */
 var app = angular.module('drawWorksApp');
-app.controller('MyWorkspaceRealCtrl', function ($scope) {
+app.controller('MyWorkspaceRealCtrl', function ($scope, $firebaseObject, editBidAmount, submitBidRef, $location, $routeParams, envService) {
+    var User = envService.getUser();
+    $scope.bid = $firebaseObject(submitBidRef);
+    User.$loaded(function(data){
 
+    });
 
     $scope.bidlist = [
         {

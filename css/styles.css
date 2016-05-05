@@ -149,7 +149,7 @@ div#test2 {
 
 div.dragged {
     cursor: all-scroll !important;
-    border-color: #cc0000 !important;
+    border-color: #ccb684 !important;
     z-index: 300 !important;
 }
 
@@ -169,7 +169,7 @@ a.keyLink {
 }
 
 div.dragged a.keyHTML,a.keyHTML:focus {
-    border-color: #cc0000;
+    border-color: #ccb684;
 }
 .register {
     font-family: 'Arial', sans-serif;
@@ -270,7 +270,7 @@ div.dragged a.keyHTML,a.keyHTML:focus {
     /*background-color: #323232;*/
     background-color: #562A00;
     opacity: .80;
-
+    color:#fff;
 }
 .l-title{
     font-family: 'Chief_Blueprint', sans-serif;
@@ -570,7 +570,7 @@ a:hover {color: #F4E753; font-size: 16px; text-decoration: none; }
 
 #Home:hover {
     border: none;
-    background:red;
+    background:#ccb684;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: 0px 0px 1 #777;

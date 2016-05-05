@@ -51,7 +51,7 @@ angular.module('drawWorksApp').service('envService', function envService($locati
                 gUserName = userData.reg_username;
                 uid = userData.uid;
                 $timeout(function(){
-                    $location.url("/gprojects");
+                    $location.url("/myCurrentProjects");
                 })
                 
    			}

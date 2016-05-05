@@ -1,0 +1,49 @@
+<div class="table-spacer"></div>
+<div>
+  <table>
+    <thead>
+    <tr>
+        <th class="info">Project Title</th>
+        <th class="info">Company Name</th>
+        <th class="info">Address</th>
+        <th class="info">City</th>
+        <th class="info">State</th>
+        <th class="info">Postal Code</th>
+        <th class="info">Fax</th>
+        <th class="info">Phone</th>
+        <th class="info">Project Ref. Number</th>
+        <th class="info">Project Owner</th>
+        <th class="info">Description</th>
+        <th class="info">Bid Date</th>
+        <th class="info">Contact</th>
+
+    </tr>
+    </thead>
+        <tr ng-repeat="project in projects ">
+            <a ng-href="#/project/{{project.$id}}"></a>
+                <td>{{project.ProjectTitle}}</td>
+                <td>{{project.CompanyName}}</td>
+                <td>{{project.Address}}</td>
+                <td>{{project.City}}</td>
+                <td>{{project.State}}</td>
+                <td>{{project.PostalCode}}</td>
+                <td>{{project.Fax}}</td>
+                <td>{{project.Phone}}</td>
+                <td>{{project.ProjectReferenceNumber}}</td>
+                <td>{{project.ProjectOwner}}</td>
+                <td>{{project.ProjectDescription}}</td>
+                <td>{{project.BidDate}}</td>
+                <td>{{project.Contact}}</td>
+               <!-- <span>(by {{ project.username }})</span> -->
+
+        </tr>
+    </table>
+    <br/>
+    
+    <form name="newProjectForm">
+        <button class="personal" ng-disabled="User.reg_contractorId != 1" ng-click="createProjects()">Add A New Project</button>
+    </form>
+    <br/>
+</div>
+
+
